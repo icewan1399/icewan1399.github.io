@@ -12,49 +12,8 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <!--span  <span class="nav__sub-title">Test</span>          : 여기에서 Test가 사이드바에 보일 항목의 이름을 의미한다. -->
-        <!--span  문법적으로는 의미가 없고 항목의 이름만 정하는 것 -->
-        <!-- ============================== Test 항목 추가 ===============================================-->
-        <span class="nav__sub-title">Test</span>
-            <!--해당 항목에 추가할 각각의 카테고리를 입력한다. <ul> ~~~ <ul>가 하나의 카테고리를 의미-->
-            <!-- ============================== Test1 카테고리 추가 ======================================-->
-            <!--Test1 카테고리 글들을 모아둔 페이지인 /categories/test1 주소의 글로 링크 연결한다. -->
-            <ul>
-                {% for category in site.categories %}
-                    <!-- if category[0] == "Test1"                  : 여기에서 Test1은 카테고리를 의미한다 -->
-                    {% if category[0] == "Test1" %}
-                        <!-- href="/categories/test1                : 여기에서 test1는 카테고리를 모아놓은 페이지의 permalink를 의미한다. 그렇기 때문에 해당 카테고리 페이지랑 맞춰주어야함 -->
-                        <!-- class="">Test1                         : 여기에서 Test1는 사이드바에 보일 페이지의 이름을 의미한다. 문법적으로 의미가 없다. -->
-                        <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-                        <li><a href="/categories/test1" class="">Test1 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <!-- ============================== Test2 카테고리 추가 ======================================-->
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Test2" %}
-                        <li><a href="/categories/test2" class="">Test2 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <!--이런식으로 추가로 목록을 추가할 수 있음-->
-        <span class="nav__sub-title">Test</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Test1" %}
-                        <li><a href="/categories/test1" class="">Test1 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Test2" %}
-                        <li><a href="/categories/test2" class="">Test2 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+         <!--카테고리 항목 추가하기-->
+         <!--카테고리 추가하기-->
       </li>
   </ul>
 </nav>

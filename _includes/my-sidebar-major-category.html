@@ -1,0 +1,7 @@
+{% assign page_directory = "/categories/" %}
+
+{% for category in site.categories %}
+  {% if category[0] == {{major_category_name}} %}
+    <li><a href="{{page_directory}}{{category_href}}" class="">{{sidebar_category_title}} ({{category[1].size}})</a></li>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,38 @@
+<!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            <!--여기서 font-family를 수정하여 폰트변경가능 -->
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!-- C++ ==============================================================================================================-->
+        <span class="nav__sub-title">C++</span>
+             <!-- C++ 카테고리 모음=============================================================================================-->
+            <ul>
+                {% assign sidebar_category_title  = "C++ 카테고리 모음 "  %}
+                {% assign category_href           = "cpp"                %}
+
+                {% assign major_category_name     = "Cpp"                %}
+
+                {% include my-sidebar-major-category.html %}
+            </ul>
+            <!-- C++ ETC ======================================================================================================-->
+            <ul>
+                {% assign sidebar_category_title  = "C++ ETC "  %}
+                {% assign category_href           = "cpp-etc"   %}
+
+                {% assign major_category_name     = "Cpp"       %}
+                {% assign sub_category_name       = "ETC"       %}
+
+                {% include my-sidebar-major-sub-category.html %}
+            </ul>
+        <!-- 새로운 대분류 추가=================================================================================================-->
+  </ul>
+</nav>

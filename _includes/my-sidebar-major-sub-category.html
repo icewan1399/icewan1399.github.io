@@ -1,0 +1,11 @@
+{% assign major_category = site.categories.[major_category_name] %}
+{% assign page_directory = "/categories/" %}
+{% assign count = 0 %}
+
+{% for post in major_category %}
+  {% if post.categories contains sub_category_name %}
+    {% assign count = count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<li><a href="{{page_directory}}{{category_href}}" class="">{{sidebar_category_title}}({{ count }})</a></li>

@@ -1,0 +1,8 @@
+***
+
+{% assign posts = site.categories.[major_category_name] %}
+{% for post in posts %}
+  {% if post.categories contains sub_category_name %}
+    {% include archive-single.html type=page.entries_layout %}
+  {% endif %}
+{% endfor %}

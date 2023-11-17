@@ -14,37 +14,51 @@
       <li>
         <!-- C++ ==============================================================================================================-->
         <span class="nav__sub-title">C++</span>
-             <!-- C++ 카테고리 모음=============================================================================================-->
-            <ul>
-                {% assign sidebar_category_title  = "C++ 카테고리 모음 "  %}
-                {% assign category_href           = "cpp"                %}
+        <!-- C++ 카테고리 모음=============================================================================================-->
+        <ul>
+          {% assign sidebar_category_title  = "C++ 카테고리 모음 "  %}
+          {% assign category_href           = "cpp"                %}
 
-                {% assign major_category_name     = "Cpp"                %}
+          {% assign major_category_name     = "Cpp"                %}
 
-                {% include my-sidebar-major-category.html %}
-            </ul>
-            <!-- C++ ETC ======================================================================================================-->
-            <ul>
-                {% assign sidebar_category_title  = "C++ ETC "  %}
-                {% assign category_href           = "cpp-etc"   %}
+          {% include my-sidebar-major-category.html %}
+        </ul>
+        <!-- C++ ETC ======================================================================================================-->
+        <ul>
+          {% assign sidebar_category_title  = "C++ ETC "  %}
+          {% assign category_href           = "cpp-etc"   %}
 
-                {% assign major_category_name     = "Cpp"       %}
-                {% assign sub_category_name       = "ETC"       %}
+          {% assign major_category_name     = "Cpp"       %}
+          {% assign sub_category_name       = "ETC"       %}
 
-                {% include my-sidebar-major-sub-category.html %}
-            </ul>
+          {% include my-sidebar-major-sub-category.html %}
+        </ul>
+
+        <!-- ETC ==============================================================================================================-->
+        <span class="nav__sub-title">UE</span>
+        <!-- Blog =============================================================================================================-->
+        <ul>
+          {% assign sidebar_category_title  = "언리얼 강의1 "      %}
+          {% assign category_href           = "ue-lecture-1"      %}
+
+          {% assign major_category_name     = "UE"                %}
+          {% assign sub_category_name       = "Lecture 1"         %}
+
+          {% include my-sidebar-major-sub-category.html %}
+        </ul>
+
         <!-- ETC ==============================================================================================================-->
         <span class="nav__sub-title">ETC</span>
         <!-- Blog =============================================================================================================-->
-            <ul>
-                {% assign sidebar_category_title  = "Blog "      %}
-                {% assign category_href           = "etc-blog"   %}
+        <ul>
+          {% assign sidebar_category_title  = "Blog "      %}
+          {% assign category_href           = "etc-blog"   %}
 
-                {% assign major_category_name     = "ETC"        %}
-                {% assign sub_category_name       = "Blog"       %}
+          {% assign major_category_name     = "ETC"        %}
+          {% assign sub_category_name       = "Blog"       %}
 
-                {% include my-sidebar-major-sub-category.html %}
-            </ul>
+          {% include my-sidebar-major-sub-category.html %}
+        </ul>
 
-  </ul>
+</ul>
 </nav>

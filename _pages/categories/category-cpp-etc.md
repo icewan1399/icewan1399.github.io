@@ -7,6 +7,6 @@ sidebar_main: true
 ---
 
 {% assign major_category_name = "Cpp" %}
-{% assign sub_category_name   = "Cpp ETC" %}
+{% assign sub_category_name   = "ETC" %}
 
 {% include my-page-major-sub-category.html %}

@@ -7,7 +7,7 @@ categories:
   - Blog
 
 tags:
-  - [ETC, Blog, Typora, Markdown, Markdown Reference, todo]
+  - [ETC, Blog, Typora, Markdown, Markdown Reference]
 
 date: 2023-11-11
 last_modified_at: 2023-11-17
